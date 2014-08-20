@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
   
   l<-list(set = set, get = get,setinverse = setinverse,getinverse = getinverse)
   
-  l   ## returns the list that consist of 4 elements
+  l     ##    returns the list that consist of 4 elements
 }
 
 
@@ -29,7 +29,7 @@ CacheSolve <- function(x=matrix(), ...) {
     return(m)
   }
   data <- x$get()  
-  m <- solve(data, ...)   ## calculates the inverse of a matrix using solve()
+  m <- solve(data, ...)     ##   calculates the inverse of a matrix using solve()
   x$setinverse(m)
   m
 }
